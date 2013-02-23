@@ -1,3 +1,7 @@
+blend_tutorial_blog:
+    resource: "@BlendTutorialBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
 eZDemoBundle:
     resource: "@eZDemoBundle/Resources/config/routing.yml"
 
