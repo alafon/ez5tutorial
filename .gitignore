@@ -7,3 +7,4 @@
 /ez/ezpublish_legacy/var/ezdemo_site/*
 *.php~
 .idea
+.DS_Store
