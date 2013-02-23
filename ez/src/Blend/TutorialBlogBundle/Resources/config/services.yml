@@ -1,7 +1,12 @@
 parameters:
-#    blend_tutorial_blog.example.class: Blend\TutorialBlogBundle\Example
+    blend_tutorial_blog.blogcontroller.class: Blend\TutorialBlogBundle\Controller\BlogController
 
 services:
-#    blend_tutorial_blog.example:
-#        class: %blend_tutorial_blog.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    blend_tutorial_blog.controller:
+        class: %blend_tutorial_blog.blogcontroller.class%
+        arguments: [@ezpublish.view_manager]
+        calls:
+            - [ setContainer, [@service_container] ]
+
+    tblog:
+        alias: blend_tutorial_blog.controller

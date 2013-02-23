@@ -6,7 +6,18 @@
     	{# The location variable contains the Location/placement information (node) #}
 	    <h1 class="page-title">{{ location.contentInfo.name }}</h1>
 	    {# The content variable is the content object itself #}
-	    {# ez_render_field is a convencience method which will correctly format the data type #}
+	    {# ez_render_field is a convenience method which will correctly format the data type #}
         {{ ez_render_field( content, "description" ) }}
+    	{{
+    		render (
+    			controller(
+    				"tblog:postsByDate",
+    				{
+    					'viewType': 'summary',
+    					'subTreeLocationId': location.id
+    				}
+    			)
+			)
+    	}}
     </article>
 {% endblock %}
