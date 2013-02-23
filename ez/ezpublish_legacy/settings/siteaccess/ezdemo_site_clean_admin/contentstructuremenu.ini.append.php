@@ -3,6 +3,7 @@
 [TreeMenu]
 Dynamic=enabled
 ShowClasses[]
+ShowClasses[]=blog
 ShowClasses[]=folder
 ShowClasses[]=user_group
 ShowClasses[]=wiki_page
