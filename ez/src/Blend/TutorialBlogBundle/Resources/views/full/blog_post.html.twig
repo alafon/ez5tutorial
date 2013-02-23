@@ -1,0 +1,7 @@
+{% extends noLayout ? viewbaseLayout : "BlendTutorialBlogBundle::pagelayout.html.twig" %}
+{% block content %}
+    <article class="blog_post">
+        <h1 class="page-title">{{ location.contentInfo.name }}</h1>
+        {{ ez_render_field( content, "body" ) }}
+    </article>
+{% endblock %}
