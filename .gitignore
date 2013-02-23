@@ -1,0 +1,6 @@
+/ez/ezpublish/cache/*
+/ez/ezpublish/logs/*
+/logs/*
+/ez/ezpublish_legacy/var/cache/*
+/ez/ezpublish_legacy/var/log/*
+/ez/ezpublish_legacy/storage/*
