@@ -5,3 +5,5 @@
 /ez/ezpublish_legacy/var/log/*
 /ez/ezpublish_legacy/var/storage/*
 /ez/ezpublish_legacy/var/ezdemo_site/*
+*.php~
+.idea

@@ -1,0 +1,6 @@
+imports:
+    -
+        resource: ezpublish.yml
+# This file just imports all settings from ezpublish.yml, but you have the option of 
+# changing the config for each environment. This file must exist, even if it just passes
+# the settings from ezpublish.yml unchanged
