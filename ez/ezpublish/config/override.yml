@@ -17,3 +17,8 @@ ezpublish:
                         template: BlendTutorialBlogBundle:full:blog_post.html.twig
                         match:
                             Identifier\ContentType: blog_post
+                summary:
+                    blog_post:
+                        template: BlendTutorialBlogBundle:summary:blog_post.html.twig
+                        match:
+                            Identifier\ContentType: blog_post

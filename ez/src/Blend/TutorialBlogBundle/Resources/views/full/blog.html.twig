@@ -8,5 +8,17 @@
 	    {# The content variable is the content object itself #}
 	    {# ez_render_field is a convencience method which will correctly format the data type #}
         {{ ez_render_field( content, "description" ) }}
+
+    	{{
+    		render (
+    			controller(
+    				"tblog:postsByDate",
+    				{
+    					'viewType': 'summary',
+    					'subTreeLocationId': location.id
+    				}
+    			)
+			)
+    	}}        
     </article>
 {% endblock %}

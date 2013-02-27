@@ -1,7 +1,16 @@
+#These parameters are defined like variables. They can prevent you from needing to 
+#change a bunch of code just because you changed your class name.
 parameters:
-#    blend_tutorial_blog.example.class: Blend\TutorialBlogBundle\Example
+    blend_tutorial_blog.blogcontroller.class: Blend\TutorialBlogBundle\Controller\BlogController
 
 services:
-#    blend_tutorial_blog.example:
-#        class: %blend_tutorial_blog.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    #This tells symfony what is needed to instantiate our controller
+    blend_tutorial_blog.controller:
+        class: %blend_tutorial_blog.blogcontroller.class%
+        arguments: [@ezpublish.view_manager]
+        calls:
+            - [setContainer, [@service_container] ]
+
+    #This adds a short name 'tblog' for our controller, which is nicer to type in templates
+    tblog:
+        alias: blend_tutorial_blog.controller
